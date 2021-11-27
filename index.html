@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather App </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <img src="img/home.svg" class="image" style="margin-left: 0%;">
+
+
+    <div class="forms-container">
+        <div class="signin-signup" style="margin-top: 40px; margin-left: 47%;">
+
+            <form action="home.html" class="sign-in-form" method="post" name="form" onsubmit="return validated()"  ><h1>Weather Web Application</h1>
+                <h3>If you need to know climate changes, this is the best solution. welcome !</h3>
+                <h2 class="title">Login </h2>
+                <div class="input-field" style="margin: 7px; margin-bottom: 50px;">
+                    <i class="fas fa-user"></i>       
+                    <input type="text" autocomplete="off" placeholder="User name" name="username" />
+                    <div id="name_error">Plesse fill your valid user name</div>
+                </div>
+
+                <div class="input-field" style="margin: 7px; margin-bottom: 5px;">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" name="password" />
+                    <div id="pass_error">Please fill your correct password</div>
+                </div>
+
+                <P class="social-text" style="margin: 7px;margin-top: 30px; margin-bottom: 5px;"> Or Sign in with social platform </P>
+                <div class="social-media">
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                </div>
+
+                <button style="margin: 10px; margin-bottom: 50px;" class="btn" type="submit">Login</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div style="position: absolute; margin-top: 200px; margin-left: 80%; ">
+
+        <div style="margin-top: 200px;">
+            <h1>You are new to here? </h1>
+            <a href="signup.html">
+                <button class="btn"> Sign Up </button>
+            </a>
+        </div>
+
+    </div>
+
+  
+       
+
+    <script src="script.js"></script>
+</body>
+
+</html>
